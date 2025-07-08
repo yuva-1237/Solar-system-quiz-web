@@ -17,7 +17,7 @@ Test your cosmic knowledge and explore the wonders of our Solar System with this
 
 ## 🎮 Live Demo
 
-🔗 [Play the Game Here]()  
+🔗 [Play the Game Here](https://solar-system-quiz-web.vercel.app/)  
 
 ---
 
