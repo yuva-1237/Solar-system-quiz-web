@@ -1,4 +1,4 @@
-// Simple star field generator
+
 const starContainer = document.getElementById('stars');
 const numStars = 160;
 for (let i = 0; i < numStars; i++) {
