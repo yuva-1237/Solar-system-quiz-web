@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Solar System Quiz Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="solar-bg"></div>
+  <div id="stars"></div>
+  <div class="solar-system-wrapper">
+    <div class="solar-system">
+      <div class="orbit orbit-mercury"><div class="planet mercury"></div></div>
+      <div class="orbit orbit-venus"><div class="planet venus"></div></div>
+      <div class="orbit orbit-earth">
+        <div class="planet earth"></div>
+        <div class="moon-orbit"><div class="moon"></div></div>
+      </div>
+      <div class="orbit orbit-mars"><div class="planet mars"></div></div>
+      <div class="orbit orbit-jupiter"><div class="planet jupiter"></div></div>
+      <div class="orbit orbit-saturn"><div class="planet saturn"></div><div class="ring"></div></div>
+      <div class="orbit orbit-uranus"><div class="planet uranus"></div></div>
+      <div class="orbit orbit-neptune"><div class="planet neptune"></div></div>
+      <div class="sun"></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo"><span class="spin"><i class="fa-solid fa-meteor"></i></span> Solar Quiz</div>
+    <ul>
+      <li><a href="#" id="nav-home" class="active">Home</a></li>
+      <li><a href="#" id="nav-about">About</a></li>
+      <li><a href="#" id="nav-contact">Contact</a></li>
+      <div class="nav-underline"></div>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <section id="home-section" class="content-section active">
+      <div id="home-content">
+        <h1><span class="cosmic-gradient">Welcome to the Solar System Quiz!</span></h1>
+        <p>Test your cosmic knowledge! This interactive quiz lets you explore the wonders of our Solar System. Enjoy a live, animated cosmic background while you play. Click <b>Start Quiz</b> to begin your journey!</p>
+        <button id="start-quiz-btn"><i class="fa-solid fa-rocket"></i> Start Quiz</button>
+      </div>
+      <div id="quiz-container" style="display:none;"></div>
+    </section>
+  </main>
+
+  <!-- About Modal -->
+  <div id="about-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="close-about">&times;</span>
+      <h2><i class="fa-solid fa-circle-info"></i> About This Project</h2>
+      <div class="modal-scroll">
+      <p>
+        <b>Solar System Quiz Game</b> is a modern, interactive web application designed to make learning about our Solar System fun and visually immersive.<br><br>
+        <b>Features:</b>
+        <ul>
+          <li>Animated, interactive solar system and twinkling starfield background</li>
+          <li>Professionally styled, glassmorphic interface</li>
+          <li>Challenging quiz with instant feedback and a skip option for tricky questions</li>
+          <li>Responsive design for all screen sizes</li>
+          <li>About and Contact modals with rich content and social links</li>
+        </ul>
+        <b>Why this project?</b><br>
+        Space exploration inspires curiosity and wonder! This quiz helps users of all ages to discover interesting facts about the Solar System in a playful, engaging way.<br><br>
+        <b>Technologies used:</b> HTML, CSS (with glassmorphism & gradients), JavaScript, and <i class="fa-brands fa-font-awesome"></i> Font Awesome.<br><br>
+        <b>Credits:</b> Created by <span class="cosmic-gradient">Your Name</span> (<i class="fa-brands fa-github"></i> <a href="https://github.com/your-github" class="contact-link" target="_blank">GitHub</a>)
+      </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div id="contact-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="close-contact">&times;</span>
+      <h2><i class="fa-solid fa-address-book"></i> Contact & Follow</h2>
+      <div class="modal-scroll">
+      <div class="contact-block">
+        <p>
+          <b>Let's connect!</b><br>
+          For questions, feedback, or collaboration opportunities, feel free to reach out:<br>
+          <i class="fa-solid fa-envelope"></i>
+          <a class="contact-link" href="mailto:your@email.com">your@email.com</a>
+        </p>
+        <p>
+          <b>Connect on socials:</b>
+        </p>
+        <div class="socials">
+          <a href="https://github.com/your-github" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/your-twitter" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://linkedin.com/in/your-linkedin" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://codepen.io/your-codepen" target="_blank" title="CodePen"><i class="fab fa-codepen"></i></a>
+        </div>
+        <div class="follow-block">
+          <hr class="follow-divider"/>
+          <div class="follow-title"><i class="fa-solid fa-users"></i> Follow for more:</div>
+          <div class="follow-icons">
+            <a href="https://github.com/your-github" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/your-twitter" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com/in/your-linkedin" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://codepen.io/your-codepen" target="_blank" title="CodePen"><i class="fab fa-codepen"></i></a>
+            <a href="https://dev.to/your-devto" target="_blank" title="Dev.to"><i class="fab fa-dev"></i></a>
+            <a href="https://youtube.com/your-youtube" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://stackoverflow.com/users/your-stackoverflow" target="_blank" title="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
+            <a href="https://www.instagram.com/your-instagram/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="stars.js"></script>
+
+  <footer class="solar-footer">
+    <span>🌠 Solar System Quiz &copy; 2025 • Made with <i class="fa-solid fa-star"></i> for space lovers</span>
+  </footer>
+</body>
+</html>
